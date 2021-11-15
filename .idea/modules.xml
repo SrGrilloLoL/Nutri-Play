@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Juego.iml" filepath="$PROJECT_DIR$/.idea/modules/Juego.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/inicio/Juego.inicio.iml" filepath="$PROJECT_DIR$/.idea/modules/inicio/Juego.inicio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/launcher/Juego.launcher.iml" filepath="$PROJECT_DIR$/.idea/modules/launcher/Juego.launcher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/unityLibrary/Juego.unityLibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/unityLibrary/Juego.unityLibrary.iml" />
+    </modules>
+  </component>
+</project>
