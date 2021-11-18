@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void iniciarSesion (View view){
-        Intent intent = new Intent(this, Perfil.class);
+        Intent intent = new Intent(this, Home.class);
         startActivity(intent);
     }
 
