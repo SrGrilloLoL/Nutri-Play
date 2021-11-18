@@ -10,16 +10,20 @@
         android:name="com.example.inicio.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
-
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.inicio.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:id="@+id/gamesFragment2"
+        android:name="com.example.inicio.GamesFragment"
+        android:label="fragment_games"
+        tools:layout="@layout/fragment_games" />
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.inicio.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/profileFragment"
+        android:name="com.example.inicio.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/physicalActivityFragment"
+        android:name="com.example.inicio.PhysicalActivityFragment"
+        android:label="fragment_physical_activity"
+        tools:layout="@layout/fragment_physical_activity" />
+
 </navigation>
