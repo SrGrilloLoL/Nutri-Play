@@ -1,12 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: :UnityAds:@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1412f4ec76deaac1454b2890da877934/transformed/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1412f4ec76deaac1454b2890da877934/transformed/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1412f4ec76deaac1454b2890da877934/transformed/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/5f66a0e81fdc01dbade8eedacac745b5/transformed/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5f66a0e81fdc01dbade8eedacac745b5/transformed/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5f66a0e81fdc01dbade8eedacac745b5/transformed/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/160bf86990e48f3d80b2ed41273cd137/transformed/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/160bf86990e48f3d80b2ed41273cd137/transformed/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/160bf86990e48f3d80b2ed41273cd137/transformed/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

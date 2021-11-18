@@ -2,25 +2,31 @@ package com.example.inicio;
 
 import android.os.Bundle;
 
-import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Menu;
 
 
-
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.tabs.TabLayout;
 
 
 public class Home extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+    private TabLayout tabLayout;
+    private ViewPager viewPager;
+    private View view;
+    private VPAdapter vpAdapter;
 
 
     @Override

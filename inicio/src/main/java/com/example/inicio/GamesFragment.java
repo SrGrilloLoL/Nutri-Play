@@ -2,17 +2,17 @@ package com.example.inicio;
 
 import android.os.Bundle;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.material.tabs.TabLayout;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -33,7 +33,7 @@ public class GamesFragment extends Fragment {
 
     private TabLayout tabLayout;
     private ViewPager viewPager;
-    private View view;
+//    private View view;
     private VPAdapter vpAdapter;
 
     public GamesFragment() {
@@ -62,29 +62,16 @@ public class GamesFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        view = getLayoutInflater().inflate(R.layout.fragment_games, null);
-
-        tabLayout = (TabLayout) view.findViewById(R.id.tabGames);
-        viewPager = (ViewPager) view.findViewById(R.id.viewPager);
-
-        tabLayout = (TabLayout) view.findViewById(R.id.tabGames);
-        viewPager = (ViewPager) view.findViewById(R.id.viewPager);
-        tabLayout.setupWithViewPager(viewPager);
-        vpAdapter = new VPAdapter(getFragmentManager());
-        vpAdapter.addFragment( new PuzzleFragment(), "ROMPECABEZAS");
-        vpAdapter.addFragment( new SideLineFragment(), "BANDA");
-        System.out.println("ELEMENTS: "+ vpAdapter.getCount());
-        viewPager.setAdapter(vpAdapter);
-
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
 
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_games, container, false);
@@ -93,12 +80,17 @@ public class GamesFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-//        tabLayout = (TabLayout) view.findViewById(R.id.tabGames);
-//        viewPager = (ViewPager) view.findViewById(R.id.viewPager);
-//        tabLayout.setupWithViewPager(viewPager);
-//        vpAdapter = new VPAdapter(getFragmentManager());
-//        vpAdapter.addFragment( new PuzzleFragment(), "ROMPECABEZAS");
-//        vpAdapter.addFragment( new SideLineFragment(), "BANDA");
-//        viewPager.setAdapter(vpAdapter);
+//        view = inflater.inflate(R.layout.fragment_games, container);
+
+        tabLayout = (TabLayout) view.findViewById(R.id.tabGames);
+        viewPager = (ViewPager) view.findViewById(R.id.viewPager);
+
+        tabLayout.setupWithViewPager(viewPager);
+        vpAdapter = new VPAdapter(getChildFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+        vpAdapter.addFragment(new PuzzleFragment(), "ROMPECABEZAS");
+        vpAdapter.addFragment(new SideLineFragment(), "BANDA");
+        viewPager.setAdapter(vpAdapter);
+
+
     }
 }

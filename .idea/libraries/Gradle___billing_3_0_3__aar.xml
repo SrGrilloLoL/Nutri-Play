@@ -1,12 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: :billing-3.0.3:@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2b500019639160926fd478f2517b44cc/transformed/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2b500019639160926fd478f2517b44cc/transformed/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2b500019639160926fd478f2517b44cc/transformed/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3d505251a53f416c581e423defbde758/transformed/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3d505251a53f416c581e423defbde758/transformed/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3d505251a53f416c581e423defbde758/transformed/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/22fc1fcc74f4cf60ff3e7383d58682d5/transformed/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/22fc1fcc74f4cf60ff3e7383d58682d5/transformed/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/22fc1fcc74f4cf60ff3e7383d58682d5/transformed/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

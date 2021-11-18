@@ -2,10 +2,12 @@ package com.example.inicio;
 
 
 
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+
+import com.example.inicio.ui.home.HomeFragment;
 
 import java.util.ArrayList;
 
@@ -15,12 +17,13 @@ public class VPAdapter extends FragmentPagerAdapter {
     private final ArrayList<String> fragmentTitle = new ArrayList<>();
 
 
-    public VPAdapter(FragmentManager fm) {
-        super(fm);
+    public VPAdapter(FragmentManager fm, int behavior) {
+        super(fm, behavior);
     }
 
     @Override
     public Fragment getItem(int i) {
+
         return fragmentArrayList.get(i);
     }
 
@@ -37,6 +40,6 @@ public class VPAdapter extends FragmentPagerAdapter {
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        return fragmentTitle.get(position);
+        return  fragmentTitle.get(position);
     }
 }
