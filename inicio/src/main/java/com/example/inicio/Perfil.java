@@ -17,9 +17,9 @@ import com.unity3d.player.UnityPlayerActivity;
 public class Perfil extends AppCompatActivity {
 
     private int visualizarMenu = 0;
-    private LinearLayout lvPerfil, lvActFisica, lvJuego, lvMenu;
+    private LinearLayout lvPerfil, lvActFisica, lvJuego, lvMenu, lvBanda, lvRompecabeza;
     private TextView tvUsuario, tvGenero;
-    private Button btPerfil, btActFisica, btJuego, btEditar, btGuardar, btCerrarSesion;
+    private Button btPerfil, btActFisica, btJuego, btEditar, btGuardar, btBanda, btRompecabeza;
     private Spinner spEdadP, spEstaturaP, spPesoP;
     private String link = "https://www.youtube.com/channel/UCERTeaGoYINlLt9Y31_fmUw";
 
@@ -32,6 +32,8 @@ public class Perfil extends AppCompatActivity {
         lvActFisica = (LinearLayout) findViewById(R.id.lvActFisica);
         lvJuego = (LinearLayout) findViewById(R.id.lvJuego);
         lvMenu = (LinearLayout) findViewById(R.id.lvMenu);
+        lvBanda = (LinearLayout) findViewById(R.id.lvBanda);
+        lvRompecabeza = (LinearLayout) findViewById(R.id.lvRompecabeza);
 
         tvUsuario = (TextView) findViewById(R.id.tvUsuario);
         tvGenero = (TextView) findViewById(R.id.tvGenero);
@@ -41,7 +43,8 @@ public class Perfil extends AppCompatActivity {
         btJuego = (Button) findViewById(R.id.btJuego);
         btEditar = (Button) findViewById(R.id.btEditar);
         btGuardar = (Button) findViewById(R.id.btGuardar);
-        btCerrarSesion = (Button) findViewById(R.id.btCerrarSesion);
+        btBanda = (Button) findViewById(R.id.btBanda);
+        btRompecabeza = (Button) findViewById(R.id.btRompecabeza);
 
         spEdadP = (Spinner) findViewById(R.id.spEdadP);
         String edad[] = {"Selecciona", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"};
@@ -175,6 +178,20 @@ public class Perfil extends AppCompatActivity {
     public void visualizarJuego(View view){
         Intent intent = new Intent(this, UnityPlayerActivity.class);
         startActivity(intent);
+    }
+
+    public void visualizarBanda(View view){
+        btBanda.setEnabled(false);
+        btRompecabeza.setEnabled(true);
+        lvRompecabeza.setVisibility(View.GONE);
+        lvBanda.setVisibility(View.VISIBLE);
+    }
+
+    public void visualizarRompecabezas(View view){
+        btBanda.setEnabled(true);
+        btRompecabeza.setEnabled(false);
+        lvRompecabeza.setVisibility(View.VISIBLE);
+        lvBanda.setVisibility(View.GONE);
     }
 
 }

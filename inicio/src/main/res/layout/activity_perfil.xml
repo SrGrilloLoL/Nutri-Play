@@ -102,7 +102,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:visibility="visible">
 
@@ -115,7 +115,21 @@
 
                 <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btJugar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:onClick="visualizarJuego"
+                        android:text="@string/button_jugar"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent" />
 
                     <TextView
                         android:id="@+id/textView23"
@@ -127,24 +141,159 @@
                         android:gravity="center"
                         android:text="@string/button_juego"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textSize="34sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <Button
-                        android:id="@+id/button"
+                        android:id="@+id/btBanda"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:enabled="false"
+                        android:onClick="visualizarBanda"
+                        android:text="@string/text_banda"
+                        app:layout_constraintEnd_toStartOf="@+id/btRompecabeza"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+                    <Button
+                        android:id="@+id/btRompecabeza"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:onClick="visualizarJuego"
-                        android:text="@string/button_jugar"
-                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:onClick="visualizarRompecabezas"
+                        android:text="@string/text_rompecabezas"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/btBanda"
+                        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+                    <LinearLayout
+                        android:id="@+id/lvBanda"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:orientation="vertical"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toTopOf="@+id/btJugar"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+                        app:layout_constraintTop_toBottomOf="@+id/btRompecabeza">
+
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="@string/text_banda"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textSize="24sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView8"
+                                app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+                            <TextView
+                                android:id="@+id/textView9"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:text="@string/text_instrucciones_banda"
+                                android:textAlignment="viewStart"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+                        </android.support.constraint.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lvRompecabeza"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toTopOf="@+id/btJugar"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btRompecabeza">
+
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView14"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:gravity="center|center_horizontal"
+                                android:text="@string/text_rompecabezas"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/imageView5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                                app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+                            <TextView
+                                android:id="@+id/textView16"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:inputType="textMultiLine"
+                                android:text="@string/text_instrucciones_rompecabezas"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+                        </android.support.constraint.ConstraintLayout>
+                    </LinearLayout>
 
                 </android.support.constraint.ConstraintLayout>
             </LinearLayout>
