@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Nutri-Play.iml" filepath="$PROJECT_DIR$/.idea/modules/Nutri-Play.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/inicio/Nutri-Play.inicio.iml" filepath="$PROJECT_DIR$/.idea/modules/inicio/Nutri-Play.inicio.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/launcher/Nutri-Play.launcher.iml" filepath="$PROJECT_DIR$/.idea/modules/launcher/Nutri-Play.launcher.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/unityLibrary/Nutri-Play.unityLibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/unityLibrary/Nutri-Play.unityLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Nutri-Play-main.iml" filepath="$PROJECT_DIR$/.idea/modules/Nutri-Play-main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/inicio/Nutri-Play-main.inicio.iml" filepath="$PROJECT_DIR$/.idea/modules/inicio/Nutri-Play-main.inicio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/launcher/Nutri-Play-main.launcher.iml" filepath="$PROJECT_DIR$/.idea/modules/launcher/Nutri-Play-main.launcher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/unityLibrary/Nutri-Play-main.unityLibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/unityLibrary/Nutri-Play-main.unityLibrary.iml" />
     </modules>
   </component>
 </project>

@@ -29,61 +29,78 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
-                        <Button
-                            android:id="@+id/btnPuzzle"
-                            android:layout_width="379dp"
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
-                            android:text="Jugar"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
-
-                        <Button
-                            android:id="@+id/btnTutorial"
-                            android:layout_width="368dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="16dp"
-                            android:layout_marginBottom="16dp"
-                            android:onClick="openTutorial"
-                            android:text="Ver Tutorial"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/btnPuzzle" />
-
-                        <ImageView
-                            android:id="@+id/imageView4"
-                            android:layout_width="329dp"
-                            android:layout_height="244dp"
-                            android:layout_marginTop="24dp"
-                            android:src="@drawable/main_menu"
+                            android:text="@string/text_instruccion_R_1"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
                         <ImageView
-                            android:id="@+id/imageView6"
-                            android:layout_width="350dp"
-                            android:layout_height="253dp"
-                            android:layout_marginTop="12dp"
-                            android:src="@drawable/puzzle_tutorial"
+                            android:id="@+id/imageView4"
+                            android:layout_width="329dp"
+                            android:layout_height="244dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/main_menu"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+                            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/text_instruccion_R_2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
                         <ImageView
                             android:id="@+id/imageView7"
                             android:layout_width="332dp"
                             android:layout_height="206dp"
                             android:layout_marginTop="16dp"
-                            android:layout_marginBottom="16dp"
                             android:src="@drawable/puzzle_menu"
-                            app:layout_constraintBottom_toTopOf="@+id/imageView6"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/imageView4"
-                            app:layout_constraintVertical_bias="0.166" />
+                            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/text_instruccion_R_3"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="350dp"
+                            android:layout_height="253dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/puzzle_tutorial"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.491"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                        <Button
+                            android:id="@+id/btnPuzzle"
+                            android:layout_width="379dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="Jugar"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
 

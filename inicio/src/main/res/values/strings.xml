@@ -10,14 +10,9 @@
     <string name="text_estatura">Estatura</string>
     <string name="text_actividad_fisica">Actividad fisica</string>
     <string name="text_frecuencia_actividad">Frecuencia de actividad</string>
-    <string name="button_perfil">Perfil</string>
-    <string name="button_juego">Juegos</string>
-    <string name="button_actividad_fisica">Act. Fisica</string>
-    <string name="button_editar">Editar</string>
-    <string name="button_guardar">Guardar</string>
     <string name="button_cerrar_sesion">Cerrar Sesion</string>
-    <string name="button_menu">Menu</string>
     <string name="button_jugar">Jugar</string>
+    <string name="button_tutoriales">Nutri-Play-Youtube</string>
 
     <string name="title_activity_home">Home</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -31,18 +26,15 @@
     <string name="menu_profile">Perfil</string>
     <string name="menu_games">Juegos</string>
     <string name="menu_py_ac">Actividad Física</string>
-
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
 
-
-    <string name="text_banda">Juego de la banda</string>
-    <string name="text_instrucciones_banda">1. Identificar el grupo de alimento para alimentar al fantasmita.\n
-2. Arrastrar el alimento a la boca del fantasmita.</string>
-    <string name="text_rompecabezas">Juego de rompecabeza</string>
-    <string name="text_instrucciones_rompecabezas">1. Identificar el grupo de alimento.\n
-2. Arrastrar el alimento al plato correspondiente.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_cerrar_sesion">Cerrar sesion</string>
+    <string name="text_instruccion_R_1">Seleccionar MiniJuegos</string>
+    <string name="text_instruccion_R_2">Seleccionar Rompecabezas</string>
+    <string name="text_instruccion_R_3">Comenzar</string>
+    <string name="text_instruccion_R_4">Banda de comida</string>
 
 </resources>

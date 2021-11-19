@@ -16,9 +16,7 @@ import com.unity3d.player.UnityPlayerActivity;
 
 public class PuzzleFragment extends Fragment {
 
-    private String link = "https://www.youtube.com/channel/UCERTeaGoYINlLt9Y31_fmUw";
     private  Button btnPuzzle;
-    private Button btnTutorial;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
@@ -30,22 +28,11 @@ public class PuzzleFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         btnPuzzle = (Button) view.findViewById(R.id.btnPuzzle);
-        btnTutorial = (Button) view.findViewById(R.id.btnTutorial);
-
 
         btnPuzzle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), UnityPlayerActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        btnTutorial.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Uri _link = Uri.parse(link);
-                Intent intent = new Intent(Intent.ACTION_VIEW, _link);
                 startActivity(intent);
             }
         });

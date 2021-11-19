@@ -22,9 +22,6 @@
             android:name=".Registrarse"
             android:exported="true" />
         <activity
-            android:name=".Perfil"
-            android:exported="true" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

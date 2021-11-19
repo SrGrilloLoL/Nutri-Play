@@ -2,11 +2,15 @@
   <library name="Gradle: androidx.core:core:1.2.0@aar">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/11764787662557282305b453fa914513/transformed/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7c597eeddae577cf93f4acdf3ab92cbb/transformed/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/11764787662557282305b453fa914513/transformed/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/11764787662557282305b453fa914513/transformed/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/11764787662557282305b453fa914513/transformed/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7c597eeddae577cf93f4acdf3ab92cbb/transformed/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7c597eeddae577cf93f4acdf3ab92cbb/transformed/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7c597eeddae577cf93f4acdf3ab92cbb/transformed/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
