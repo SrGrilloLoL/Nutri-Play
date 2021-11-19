@@ -16,9 +16,9 @@
             android:id="@+id/gamesFragment2"
             android:icon="@drawable/ic_baseline_videogame_asset_24"
             android:title="@string/menu_games" />
-        <item
-            android:id="@+id/physicalActivityFragment"
-            android:icon="@drawable/ic_baseline_directions_run_24"
-            android:title="@string/menu_py_ac" />
+<!--        <item-->
+<!--            android:id="@+id/physicalActivityFragment"-->
+<!--            android:icon="@drawable/ic_baseline_directions_run_24"-->
+<!--            android:title="@string/menu_py_ac" />-->
     </group>
 </menu>

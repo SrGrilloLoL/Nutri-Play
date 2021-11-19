@@ -23,11 +23,6 @@ import com.google.android.material.tabs.TabLayout;
 public class Home extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
-    private TabLayout tabLayout;
-    private ViewPager viewPager;
-    private View view;
-    private VPAdapter vpAdapter;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
