@@ -25,8 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-//        etUsuario = (EditText) findViewById(R.id.etUsuario);
+        etUsuario = (EditText) findViewById(R.id.etUsuario);
 //        etContraseña = (EditText) findViewById(R.id.etContraseña);
 //        btIniciarSesion = (Button) findViewById(R.id.btIniciarSesion);
 //        tvRegistrarse = (TextView) findViewById(R.id.tvRegistrarse);
@@ -35,7 +34,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void iniciarSesion (View view){
+        String usuario = etUsuario.getText().toString();
+        Bundle mandarDatos= new Bundle();
+        mandarDatos.putString("dato", usuario);
         Intent intent = new Intent(this, Home.class);
+        intent.putExtras(mandarDatos);
         startActivity(intent);
     }
 

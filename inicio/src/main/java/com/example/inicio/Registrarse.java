@@ -26,40 +26,34 @@ public class Registrarse extends AppCompatActivity {
         etContraseña = (EditText) findViewById(R.id.etContraseña);
 
         spGenero = (Spinner) findViewById(R.id.spGenero);
-        ArrayAdapter<?> adapterGenero = ArrayAdapter.createFromResource(this,
-                R.array.Genero,
-                android.R.layout.simple_spinner_item);
+        ArrayAdapter<?> adapterGenero = ArrayAdapter.createFromResource(this, R.array.Genero, R.layout.custom_item_spinner);
+        adapterGenero.setDropDownViewResource(R.layout.custom_spinner);
         spGenero.setAdapter(adapterGenero);
 
         spEdad = (Spinner) findViewById(R.id.spEdad);
-        ArrayAdapter<?> adapterEdad = ArrayAdapter.createFromResource(this,
-                R.array.Edad,
-                android.R.layout.simple_spinner_item);
+        ArrayAdapter<?> adapterEdad = ArrayAdapter.createFromResource(this, R.array.Edad, R.layout.custom_item_spinner);
+        adapterEdad.setDropDownViewResource(R.layout.custom_spinner);
         spEdad.setAdapter(adapterEdad);
 
         spPeso = (Spinner) findViewById(R.id.spPeso);
-        ArrayAdapter<?> adapterPeso = ArrayAdapter.createFromResource(this,
-                R.array.Peso,
-                android.R.layout.simple_spinner_item);
+        ArrayAdapter<?> adapterPeso = ArrayAdapter.createFromResource(this, R.array.Peso, R.layout.custom_item_spinner);
+        adapterPeso.setDropDownViewResource(R.layout.custom_spinner);
         spPeso.setAdapter(adapterPeso);
 
         spEstatura = (Spinner) findViewById(R.id.spEstatura);
-        ArrayAdapter<?> adapterEstatura = ArrayAdapter.createFromResource(this,
-                R.array.Estatura,
-                android.R.layout.simple_spinner_item);
+        ArrayAdapter<?> adapterEstatura = ArrayAdapter.createFromResource(this, R.array.Estatura, R.layout.custom_item_spinner);
+        adapterEstatura.setDropDownViewResource(R.layout.custom_spinner);
         spEstatura.setAdapter(adapterEstatura);
 
         spActividadFisica = (Spinner) findViewById(R.id.spActividadFisica);
-        ArrayAdapter<?> adapterActividadFisica = ArrayAdapter.createFromResource(this,
-                R.array.ActFisica,
-                android.R.layout.simple_spinner_item);
+        ArrayAdapter<?> adapterActividadFisica = ArrayAdapter.createFromResource(this, R.array.ActFisica, R.layout.custom_item_spinner);
+        adapterActividadFisica.setDropDownViewResource(R.layout.custom_spinner);
         spActividadFisica.setAdapter(adapterActividadFisica);
 
 
         spFrecuenciaActividad = (Spinner) findViewById(R.id.spFrecuenciaActividad);
-        ArrayAdapter<?> adapterFrecuenciaActividad = ArrayAdapter.createFromResource(this,
-                R.array.FrecFisica,
-                android.R.layout.simple_spinner_item);
+        ArrayAdapter<?> adapterFrecuenciaActividad = ArrayAdapter.createFromResource(this, R.array.FrecFisica, R.layout.custom_item_spinner);
+        adapterFrecuenciaActividad.setDropDownViewResource(R.layout.custom_spinner);
         spFrecuenciaActividad.setAdapter(adapterFrecuenciaActividad);
 
         btRegistrarse = (Button) findViewById(R.id.btRegistrarse);

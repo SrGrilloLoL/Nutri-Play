@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo_3"
     tools:context=".SideLineFragment">
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="68dp">
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="-196dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -22,6 +23,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="24dp"
                             android:gravity="center_horizontal"
+                            android:textColor="@color/teal_200"
+                            android:fontFamily="@font/coiny"
                             android:text="BANDA DE COMIDA"
                             android:textSize="24sp"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -33,6 +36,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
+                            android:textColor="@color/teal_200"
+                            android:fontFamily="@font/coiny"
                             android:text="@string/text_instruccion_R_1"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -53,6 +58,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
+                            android:textColor="@color/teal_200"
+                            android:fontFamily="@font/coiny"
                             android:text="@string/text_instruccion_R_4"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -73,6 +80,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
+                            android:textColor="@color/teal_200"
+                            android:fontFamily="@font/coiny"
                             android:text="@string/text_instruccion_R_3"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -90,10 +99,14 @@
 
                         <Button
                             android:id="@+id/btnSideLine"
-                            android:layout_width="379dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="250dp"
+                            android:layout_height="55dp"
                             android:layout_marginTop="16dp"
                             android:layout_marginBottom="16dp"
+                            android:background="@drawable/custom_button"
+                            android:textColor="@color/teal_200"
+                            android:fontFamily="@font/coiny"
+                            android:textSize="30sp"
                             android:text="Jugar"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"

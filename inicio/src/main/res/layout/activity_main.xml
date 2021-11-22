@@ -4,30 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo_3"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="16dp"
+        android:background="@drawable/inicio_sesion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/sym_def_app_icon" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <Button
         android:id="@+id/btIniciarSesion"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/coiny"
         android:onClick="iniciarSesion"
         android:text="@string/button_iniciar_sesion"
+        android:textColor="@color/teal_200"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
@@ -38,9 +43,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:clickable="true"
+        android:fontFamily="@font/coiny"
         android:onClick="registrarse"
         android:text="@string/button_registrarse"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/teal_200"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btIniciarSesion" />
@@ -50,8 +58,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:textColorHint="@color/teal_200"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView">
@@ -59,8 +67,15 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etUsuario"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/text_user" />
+            android:layout_height="50dp"
+            android:background="@drawable/custom_text_box"
+            android:hint="@string/text_user"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textColor="@color/teal_200"
+            android:textColorHighlight="@color/teal_200"
+            android:textColorHint="@color/cardview_shadow_end_color"
+            android:textColorLink="@color/cardview_shadow_end_color" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -71,6 +86,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:textColorHint="@color/teal_200"
+        app:passwordToggleTint="#FFFFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
@@ -78,9 +95,14 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etContraseña"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_text_box"
             android:hint="@string/text_contraseña"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColor="@color/teal_200"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+         />
     </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

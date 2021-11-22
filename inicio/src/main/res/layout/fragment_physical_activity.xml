@@ -16,6 +16,7 @@
         android:gravity="center_horizontal"
         android:text="ACTIVIDAD FISICA"
         android:textSize="24sp"
+        android:background="@drawable/custom_text_box"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
