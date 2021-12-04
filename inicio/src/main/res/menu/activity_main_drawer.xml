@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view">
+    tools:showIn="navigation_view"
+    android:id="@+id/mainMenu">
 
     <group android:checkableBehavior="single">
         <item
@@ -16,9 +17,9 @@
             android:id="@+id/gamesFragment2"
             android:icon="@drawable/ic_baseline_videogame_asset_24"
             android:title="@string/menu_games" />
-<!--        <item-->
-<!--            android:id="@+id/physicalActivityFragment"-->
-<!--            android:icon="@drawable/ic_baseline_directions_run_24"-->
-<!--            android:title="@string/menu_py_ac" />-->
+        <item
+            android:id="@+id/scoreFragment"
+            android:icon="@drawable/ic_baseline_score_24"
+            android:title="@string/menu_py_ac" />
     </group>
 </menu>

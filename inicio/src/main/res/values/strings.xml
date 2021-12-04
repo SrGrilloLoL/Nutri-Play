@@ -25,13 +25,13 @@
     <string name="menu_home">Inicio</string>
     <string name="menu_profile">Perfil</string>
     <string name="menu_games">Juegos</string>
-    <string name="menu_py_ac">Actividad Física</string>
+    <string name="menu_py_ac">Puntos</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="action_cerrar_sesion">Cerrar sesion</string>
+    <string name="action_cerrar_sesion">Cerrar sesión</string>
     <string name="text_instruccion_R_1">Seleccionar MiniJuegos</string>
     <string name="text_instruccion_R_2">Seleccionar Rompecabezas</string>
     <string name="text_instruccion_R_3">Comenzar</string>

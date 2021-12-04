@@ -13,17 +13,18 @@
     <fragment
         android:id="@+id/gamesFragment2"
         android:name="com.example.inicio.GamesFragment"
-        android:label="fragment_games"
+        android:label="Jugos"
         tools:layout="@layout/fragment_games" />
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.inicio.ProfileFragment"
-        android:label="fragment_profile"
+        android:label="Perfil"
         tools:layout="@layout/fragment_profile" />
     <fragment
-        android:id="@+id/physicalActivityFragment"
-        android:name="com.example.inicio.PhysicalActivityFragment"
-        android:label="fragment_physical_activity"
-        tools:layout="@layout/fragment_physical_activity" />
+        android:id="@+id/scoreFragment"
+        android:name="com.example.inicio.ScoreFragment"
+        android:label="Puntos"
+        tools:layout="@layout/fragment_score" />
+
 
 </navigation>

@@ -185,7 +185,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <Button
-        android:id="@+id/btRegistrarse"
+        android:id="@+id/btnAddScore"
         android:layout_width="270dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"

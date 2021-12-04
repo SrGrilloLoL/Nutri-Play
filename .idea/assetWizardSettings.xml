@@ -328,7 +328,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/keyboard_arrow_down/baseline_keyboard_arrow_down_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/score/baseline_score_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -338,8 +338,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="ic_down" />
+                            <entry key="color" value="454545" />
+                            <entry key="outputName" value="ic_baseline_score_24" />
                             <entry key="sourceFile" value="C:\Users\mg0me\OneDrive\Documentos\Investigacion 2021\Nutri-Play" />
                           </map>
                         </option>
