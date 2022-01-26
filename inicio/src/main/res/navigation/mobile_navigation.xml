@@ -13,7 +13,7 @@
     <fragment
         android:id="@+id/gamesFragment2"
         android:name="com.example.inicio.GamesFragment"
-        android:label="Jugos"
+        android:label="Juegos"
         tools:layout="@layout/fragment_games" />
     <fragment
         android:id="@+id/profileFragment"

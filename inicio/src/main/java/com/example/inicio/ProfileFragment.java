@@ -32,7 +32,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ProfileFragment extends Fragment {
 
-    private EditText etGenero, etEdad, etPeso, etEstatura, etActFisica, etFrecFisica;
+    private EditText etGenero, etEdad, etPeso, etEstatura, etActFisica, etFrecFisica, etName;
     private Retrofit retrofit;
     private RestApi restApi;
     private SharedPreferences preferences;
@@ -47,6 +47,7 @@ public class ProfileFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        etName = (EditText) view.findViewById(R.id.etName);
         etGenero = (EditText) view.findViewById(R.id.etGenero);
         etEdad = (EditText) view.findViewById(R.id.etEdad);
         etPeso = (EditText) view.findViewById(R.id.etPeso);
@@ -63,6 +64,7 @@ public class ProfileFragment extends Fragment {
 
         preferences = this.getActivity().getSharedPreferences("session", Context.MODE_PRIVATE);
         editor = preferences.edit();
+        String username = preferences.getString("username", "user");
 
         int userId = preferences.getInt("userId", 0);
         String token = preferences.getString("token", "token");
@@ -77,6 +79,7 @@ public class ProfileFragment extends Fragment {
                 if(response.code() == 200){
 
                     User user = response.body();
+                    etName.setText(username);
                     etGenero.setText(user.getGender());
                     etEdad.setText(String.valueOf(user.getAge()));
                     etPeso.setText(user.getWeight() + " kg");

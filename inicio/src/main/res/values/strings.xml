@@ -10,6 +10,7 @@
     <string name="text_estatura">Estatura</string>
     <string name="text_actividad_fisica">Actividad fisica</string>
     <string name="text_frecuencia_actividad">Frecuencia de actividad</string>
+    <string name="text_visualizar_videos">Para más información, presione el icono de Youtube</string>
     <string name="button_cerrar_sesion">Cerrar Sesion</string>
     <string name="button_jugar">Jugar</string>
     <string name="button_tutoriales">Nutri-Play-Youtube</string>
@@ -36,5 +37,6 @@
     <string name="text_instruccion_R_2">Seleccionar Rompecabezas</string>
     <string name="text_instruccion_R_3">Comenzar</string>
     <string name="text_instruccion_R_4">Banda de comida</string>
+    <string name="text_deslizar">Deslizar la pantalla, para iniciar a jugar</string>
 
 </resources>

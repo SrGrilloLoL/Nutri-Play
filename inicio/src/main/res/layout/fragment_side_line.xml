@@ -18,6 +18,18 @@
                     android:layout_height="match_parent">
 
                         <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/coiny"
+                            android:text="@string/text_deslizar"
+                            android:textColor="@color/teal_200"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+                        <TextView
                             android:id="@+id/textView18"
                             android:layout_width="379dp"
                             android:layout_height="wrap_content"
@@ -36,12 +48,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
-                            android:textColor="@color/teal_200"
                             android:fontFamily="@font/coiny"
                             android:text="@string/text_instruccion_R_1"
+                            android:textColor="@color/teal_200"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+                            app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
                         <ImageView
                             android:id="@+id/imageView4"
